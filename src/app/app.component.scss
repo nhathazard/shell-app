@@ -1,0 +1,39 @@
+.shell-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    color: white;
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+    
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover, &.active {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+.main-content {
+  padding: 2rem;
+  min-height: calc(100vh - 120px);
+}
